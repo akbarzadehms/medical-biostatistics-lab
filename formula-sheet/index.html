@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Biostatistics Formula Sheet</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">Formula Sheet</div>
+      <h1>Conceptual biostatistics formula sheet</h1>
+      <p class="subtitle">Formula, use case, and common mistake in one place.</p>
+    </div>
+  </header>
+  <main class="container">
+    <section class="section">
+      <table>
+        <thead>
+          <tr>
+            <th>Concept</th>
+            <th>Formula</th>
+            <th>Use case</th>
+            <th>Common mistake</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>IQR</td>
+            <td><code>IQR = Q3 - Q1</code></td>
+            <td>Robust spread of the middle 50% of data</td>
+            <td>Assuming every value above Q3 is an outlier</td>
+          </tr>
+          <tr>
+            <td>CV</td>
+            <td><code>CV = SD / Mean × 100</code></td>
+            <td>Comparing relative variability</td>
+            <td>Comparing only raw SD across different scales</td>
+          </tr>
+          <tr>
+            <td>Variance</td>
+            <td><code>Mean of squared deviations from the mean</code></td>
+            <td>Mathematical measure of dispersion</td>
+            <td>Interpreting variance in the original unit</td>
+          </tr>
+          <tr>
+            <td>Standard deviation</td>
+            <td><code>SD = sqrt(variance)</code></td>
+            <td>Spread around the mean in the original unit</td>
+            <td>Calling SD the mean absolute distance from the mean</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <div class="footer">Created by: Mahdi Akbarzadeh</div>
+  </main>
+</body>
+</html>

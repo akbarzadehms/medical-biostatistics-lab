@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Medical Biostatistics Lab</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">Medical Biostatistics Teaching Lab</div>
+      <h1>Visual, case-based, and R-supported medical biostatistics education</h1>
+      <p class="subtitle">
+        Teaching materials for medical students who need to understand statistical ideas through
+        clinical examples, visual summaries, and short reproducible R activities.
+      </p>
+      <div class="meta">
+        <div class="meta-item"><strong>Created by:</strong> Mahdi Akbarzadeh</div>
+        <div class="meta-item">Synthetic teaching examples</div>
+        <div class="meta-item">Self-contained R activities</div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="grid">
+      <div class="card">
+        <h2>Course design</h2>
+        <p>
+          The material is organized around a simple teaching sequence: start with a clinical question,
+          introduce the statistical idea, examine the visual pattern, run a short R activity, and then write
+          an interpretation in medical language.
+        </p>
+        <div class="note">
+          Core sequence:
+          <span class="badge badge-blue">Clinical question</span>
+          <span class="badge badge-blue">Statistical concept</span>
+          <span class="badge badge-blue">Visual explanation</span>
+          <span class="badge badge-blue">R activity</span>
+          <span class="badge badge-blue">Interpretation</span>
+        </div>
+      </div>
+
+      <aside class="card">
+        <h2>How students use it</h2>
+        <ul>
+          <li>Read the short teaching page for each section.</li>
+          <li>Run the corresponding R activity.</li>
+          <li>Open the figure saved by the script.</li>
+          <li>Answer the interpretation questions.</li>
+          <li>Check the common mistake highlighted in the section.</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="section">
+      <h2>Descriptive statistics modules</h2>
+      <div class="module-grid">
+        <div class="card">
+          <span class="badge badge-green">Module 01</span>
+          <h3>Mean, median, skewness, and outliers</h3>
+          <p>Why does the mean move under extreme values while the median remains more stable?</p>
+          <div class="button-row">
+            <a class="button" href="modules/01-mean-median-skewness/index.html">Open module</a>
+            <a class="button button-secondary" href="r-labs/lab-01-mean-median-skewness/activity.R">R activity</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <span class="badge badge-green">Module 02</span>
+          <h3>Variability, variance, and standard deviation</h3>
+          <p>Why is the mean alone not enough to describe medical data?</p>
+          <div class="button-row">
+            <a class="button" href="modules/02-variability-standard-deviation/index.html">Open module</a>
+            <a class="button button-secondary" href="r-labs/lab-02-variability-standard-deviation/activity.R">R activity</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <span class="badge badge-green">Module 03</span>
+          <h3>Quartiles, IQR, boxplots, and outliers</h3>
+          <p>How should the middle 50% of data and outlier fences be interpreted?</p>
+          <div class="button-row">
+            <a class="button" href="modules/03-quartiles-iqr-boxplot/index.html">Open module</a>
+            <a class="button button-secondary" href="r-labs/lab-03-quartiles-iqr-boxplot/activity.R">R activity</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <span class="badge badge-green">Module 04</span>
+          <h3>Coefficient of variation in laboratory examples</h3>
+          <p>Why is raw SD alone insufficient when comparing measurements on different scales?</p>
+          <div class="button-row">
+            <a class="button" href="modules/04-coefficient-of-variation/index.html">Open module</a>
+            <a class="button button-secondary" href="r-labs/lab-04-coefficient-of-variation/activity.R">R activity</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Planned extensions</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Section</th>
+            <th>Planned teaching output</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Normal distribution and Z-score</td>
+            <td>Normal curve shading and probability calculations</td>
+          </tr>
+          <tr>
+            <td>Concept practice</td>
+            <td>Question sets focused on common interpretation mistakes</td>
+          </tr>
+          <tr>
+            <td>Formula sheet</td>
+            <td>Formula, use case, and common mistake in one table</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <div class="footer">
+      Created by: Mahdi Akbarzadeh · Medical Biostatistics Lab
+    </div>
+  </main>
+</body>
+</html>

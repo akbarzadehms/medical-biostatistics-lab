@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Variability, variance, and standard deviation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">Module 02</div>
+      <h1>Variability, variance, and standard deviation</h1>
+      <p class="subtitle">Why the mean alone is not enough to describe medical data.</p>
+      <div class="meta">
+        <div class="meta-item"><strong>Created by:</strong> Mahdi Akbarzadeh</div>
+        <div class="meta-item">Visual explanation</div>
+        <div class="meta-item">R activity</div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="grid">
+      <div class="section">
+        <h2>Learning goals</h2>
+        <ul><li>Explain why a measure of center should be accompanied by a measure of spread.</li>
+<li>Compare range, variance, and standard deviation.</li>
+<li>Interpret standard deviation as spread around the mean in the original unit.</li>
+<li>Use a dot plot to compare two groups with different variability.</li></ul>
+
+        <h2>Teaching notes</h2>
+        <ul><li>Two datasets may have similar centers but very different clinical implications.</li>
+<li>Variance is based on squared deviations from the mean.</li>
+<li>Standard deviation returns spread to the original unit of measurement.</li>
+<li>Spread affects how representative the mean appears.</li></ul>
+
+        <div class="callout">
+          <strong>Common mistake:</strong> Comparing groups using only their means and ignoring the spread of the data.
+        </div>
+      </div>
+
+      <aside class="section">
+        <h2>R activity</h2>
+        <p>The activity defines two small score datasets and compares mean, range, variance, and standard deviation visually.</p>
+        <div class="note">
+          The dataset is created inside the R script. Students can run the file directly without opening a separate data file.
+        </div>
+        <a class="button" href="../../r-labs/lab-02-variability-standard-deviation/activity.R">Open R activity</a>
+      </aside>
+    </section>
+
+    <section class="section">
+      <h2>Visual explanation</h2>
+      <div class="visual-panel">
+<svg width="820" height="280" viewBox="0 0 820 280" role="img" aria-label="Similar center different variability">
+  <rect x="0" y="0" width="820" height="280" fill="#ffffff"/>
+  <line x1="60" y1="110" x2="760" y2="110" stroke="#cbd5e1" stroke-width="2"/>
+  <line x1="60" y1="220" x2="760" y2="220" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="35" y="115" fill="#0f172a" font-size="16" font-family="Arial">A</text>
+  <text x="35" y="225" fill="#0f172a" font-size="16" font-family="Arial">B</text>
+  <line x1="410" y1="40" x2="410" y2="250" stroke="#dc2626" stroke-width="3" stroke-dasharray="8 6"/>
+  <text x="385" y="34" fill="#dc2626" font-size="17" font-family="Arial">Similar center</text>
+  <circle cx="210" cy="110" r="12" fill="#60a5fa"/>
+  <circle cx="310" cy="110" r="12" fill="#60a5fa"/>
+  <circle cx="410" cy="110" r="12" fill="#60a5fa"/>
+  <circle cx="510" cy="110" r="12" fill="#60a5fa"/>
+  <circle cx="610" cy="110" r="12" fill="#60a5fa"/>
+  <circle cx="370" cy="220" r="12" fill="#34d399"/>
+  <circle cx="390" cy="220" r="12" fill="#34d399"/>
+  <circle cx="410" cy="220" r="12" fill="#34d399"/>
+  <circle cx="430" cy="220" r="12" fill="#34d399"/>
+  <circle cx="450" cy="220" r="12" fill="#34d399"/>
+  <text x="620" y="118" fill="#334155" font-size="16" font-family="Arial">High spread</text>
+  <text x="470" y="228" fill="#334155" font-size="16" font-family="Arial">Low spread</text>
+</svg>
+</div>
+    </section>
+
+    <section class="section">
+      <h2>Student work</h2>
+      <ol>
+        <li>Run the R activity from top to bottom.</li>
+        <li>Read the summary table printed in the console.</li>
+        <li>Open the PNG figure saved by the script.</li>
+        <li>Write one short medical interpretation.</li>
+        <li>Identify the common mistake that the activity is designed to prevent.</li>
+      </ol>
+    </section>
+
+    <div class="button-row">
+      <a class="button button-secondary" href="../../index.html">Back to home</a>
+    </div>
+    <div class="footer">Created by: Mahdi Akbarzadeh</div>
+  </main>
+</body>
+</html>

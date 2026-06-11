@@ -1,0 +1,201 @@
+:root {
+  --bg: #f6f8fb;
+  --panel: #ffffff;
+  --ink: #14213d;
+  --muted: #5c677d;
+  --line: #d9e2ec;
+  --navy: #0b2545;
+  --blue: #2563eb;
+  --blue-dark: #1e40af;
+  --green: #166534;
+  --amber: #92400e;
+  --red: #991b1b;
+  --green-bg: #dcfce7;
+  --amber-bg: #fef3c7;
+  --red-bg: #fee2e2;
+  --shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.65;
+  direction: ltr;
+  text-align: left;
+}
+
+a { color: var(--blue); text-decoration: none; }
+a:hover { color: var(--blue-dark); text-decoration: underline; }
+
+.hero {
+  background: linear-gradient(135deg, #081f3a 0%, #123c69 58%, #1e6091 100%);
+  color: white;
+  padding: 54px 32px 88px;
+}
+
+.hero-inner { max-width: 1160px; margin: 0 auto; }
+
+.eyebrow {
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.82rem;
+  color: #c7d2fe;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3.15rem);
+  line-height: 1.18;
+  font-weight: 850;
+}
+
+.subtitle {
+  max-width: 920px;
+  margin: 18px 0 0;
+  color: #e0f2fe;
+  font-size: 1.08rem;
+}
+
+.meta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+
+.meta-item {
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: 999px;
+  padding: 7px 12px;
+  font-size: 0.92rem;
+}
+
+.container { max-width: 1160px; margin: -48px auto 48px; padding: 0 20px; }
+
+.card, .section {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  padding: 24px;
+  margin-bottom: 22px;
+}
+
+.grid { display: grid; grid-template-columns: 1.12fr 0.88fr; gap: 22px; align-items: start; }
+.module-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+
+h2 { margin: 0 0 14px; font-size: 1.45rem; color: var(--navy); }
+h3 { margin: 18px 0 10px; color: var(--navy); font-size: 1.1rem; }
+p { margin-top: 0; }
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 0.84rem;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.badge-blue { color: #1e3a8a; background: #dbeafe; }
+.badge-green { color: var(--green); background: var(--green-bg); }
+.badge-amber { color: var(--amber); background: var(--amber-bg); }
+.badge-red { color: var(--red); background: var(--red-bg); }
+
+.button-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 18px; }
+
+.button {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 10px 16px;
+  font-weight: 800;
+  background: var(--blue);
+  color: white;
+  text-decoration: none;
+}
+
+.button:hover { background: var(--blue-dark); color: white; text-decoration: none; }
+.button-secondary { background: #e5e7eb; color: #0f172a; }
+.button-secondary:hover { background: #cbd5e1; color: #0f172a; }
+
+.callout {
+  border-left: 5px solid #f59e0b;
+  background: #fffbeb;
+  padding: 14px 16px;
+  border-radius: 12px;
+  color: #78350f;
+  margin: 14px 0;
+}
+
+.note {
+  border-left: 5px solid #2563eb;
+  background: #eff6ff;
+  padding: 14px 16px;
+  border-radius: 12px;
+  color: #1e3a8a;
+  margin: 14px 0;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  font-size: 0.95rem;
+}
+
+th, td {
+  padding: 11px 12px;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+  text-align: left;
+}
+
+th { background: #f1f5f9; color: #0f172a; font-size: 0.84rem; font-weight: 800; }
+tr:last-child td { border-bottom: none; }
+
+pre, code {
+  direction: ltr;
+  text-align: left;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+}
+
+pre {
+  background: #0f172a;
+  color: #e5e7eb;
+  padding: 16px;
+  border-radius: 14px;
+  overflow-x: auto;
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+code { background: #eef2f7; padding: 2px 5px; border-radius: 6px; }
+pre code { background: transparent; padding: 0; }
+
+.visual-panel {
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 14px;
+  margin: 12px 0;
+  overflow-x: auto;
+}
+
+svg { max-width: 100%; height: auto; }
+
+.footer {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.92rem;
+  margin-top: 22px;
+}
+
+@media (max-width: 900px) {
+  .grid, .module-grid { grid-template-columns: 1fr; }
+  .hero { padding: 34px 24px 78px; }
+}

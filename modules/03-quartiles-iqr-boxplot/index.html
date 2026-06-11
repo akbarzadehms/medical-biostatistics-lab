@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Quartiles, IQR, boxplots, and outliers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">Module 03</div>
+      <h1>Quartiles, IQR, boxplots, and outliers</h1>
+      <p class="subtitle">Interpreting the middle 50% of a dataset and detecting outliers with fences.</p>
+      <div class="meta">
+        <div class="meta-item"><strong>Created by:</strong> Mahdi Akbarzadeh</div>
+        <div class="meta-item">Visual explanation</div>
+        <div class="meta-item">R activity</div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="grid">
+      <div class="section">
+        <h2>Learning goals</h2>
+        <ul><li>Define Q1, median, Q3, and IQR.</li>
+<li>Explain why IQR represents the middle 50% of the data.</li>
+<li>Compute lower and upper fences using the 1.5 × IQR rule.</li>
+<li>Interpret a boxplot as a compact visual summary.</li></ul>
+
+        <h2>Teaching notes</h2>
+        <ul><li>Q1 and Q3 are not outlier thresholds by themselves.</li>
+<li>IQR is more robust to extreme values than range.</li>
+<li>The 1.5 × IQR rule is a screening rule.</li>
+<li>Boxplots are especially useful for skewed variables such as hospital stay.</li></ul>
+
+        <div class="callout">
+          <strong>Common mistake:</strong> Calling every value above Q3 or below Q1 an outlier.
+        </div>
+      </div>
+
+      <aside class="section">
+        <h2>R activity</h2>
+        <p>The activity simulates hospital-stay data, computes quartiles, IQR, fences, and marks outliers on a boxplot.</p>
+        <div class="note">
+          The dataset is created inside the R script. Students can run the file directly without opening a separate data file.
+        </div>
+        <a class="button" href="../../r-labs/lab-03-quartiles-iqr-boxplot/activity.R">Open R activity</a>
+      </aside>
+    </section>
+
+    <section class="section">
+      <h2>Visual explanation</h2>
+      <div class="visual-panel">
+<svg width="820" height="260" viewBox="0 0 820 260" role="img" aria-label="Annotated boxplot">
+  <rect x="0" y="0" width="820" height="260" fill="#ffffff"/>
+  <line x1="90" y1="140" x2="730" y2="140" stroke="#334155" stroke-width="2"/>
+  <line x1="210" y1="105" x2="210" y2="175" stroke="#334155" stroke-width="3"/>
+  <rect x="300" y="90" width="220" height="100" fill="#bfdbfe" stroke="#1e40af" stroke-width="3"/>
+  <line x1="410" y1="90" x2="410" y2="190" stroke="#dc2626" stroke-width="4"/>
+  <line x1="520" y1="140" x2="650" y2="140" stroke="#334155" stroke-width="3"/>
+  <line x1="650" y1="105" x2="650" y2="175" stroke="#334155" stroke-width="3"/>
+  <circle cx="730" cy="140" r="8" fill="#ef4444"/>
+  <text x="290" y="75" fill="#1e40af" font-size="17" font-family="Arial">Q1</text>
+  <text x="390" y="75" fill="#dc2626" font-size="17" font-family="Arial">Median</text>
+  <text x="515" y="75" fill="#1e40af" font-size="17" font-family="Arial">Q3</text>
+  <text x="350" y="215" fill="#0f172a" font-size="17" font-family="Arial">IQR = Q3 - Q1</text>
+  <text x="690" y="120" fill="#ef4444" font-size="17" font-family="Arial">Outlier</text>
+</svg>
+</div>
+    </section>
+
+    <section class="section">
+      <h2>Student work</h2>
+      <ol>
+        <li>Run the R activity from top to bottom.</li>
+        <li>Read the summary table printed in the console.</li>
+        <li>Open the PNG figure saved by the script.</li>
+        <li>Write one short medical interpretation.</li>
+        <li>Identify the common mistake that the activity is designed to prevent.</li>
+      </ol>
+    </section>
+
+    <div class="button-row">
+      <a class="button button-secondary" href="../../index.html">Back to home</a>
+    </div>
+    <div class="footer">Created by: Mahdi Akbarzadeh</div>
+  </main>
+</body>
+</html>

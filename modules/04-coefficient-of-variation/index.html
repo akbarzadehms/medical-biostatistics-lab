@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Coefficient of variation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">Module 04</div>
+      <h1>Coefficient of variation</h1>
+      <p class="subtitle">Comparing relative variability in clinical laboratory examples.</p>
+      <div class="meta">
+        <div class="meta-item"><strong>Created by:</strong> Mahdi Akbarzadeh</div>
+        <div class="meta-item">Visual explanation</div>
+        <div class="meta-item">R activity</div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="grid">
+      <div class="section">
+        <h2>Learning goals</h2>
+        <ul><li>Define coefficient of variation as SD divided by mean times 100.</li>
+<li>Explain why CV is unitless and expresses relative variability.</li>
+<li>Compare raw SD and CV in a laboratory analyzer example.</li>
+<li>Avoid misleading conclusions when variables are on different scales.</li></ul>
+
+        <h2>Teaching notes</h2>
+        <ul><li>Raw SD is scale-dependent.</li>
+<li>CV is useful when comparing relative variability across different scales.</li>
+<li>A smaller raw SD does not always mean better precision.</li>
+<li>CV is useful in laboratory science, quality control, and biomedical measurement.</li></ul>
+
+        <div class="callout">
+          <strong>Common mistake:</strong> Assuming that the analyzer with the smaller raw SD is always more precise.
+        </div>
+      </div>
+
+      <aside class="section">
+        <h2>R activity</h2>
+        <p>The activity creates two laboratory analyzer examples, calculates mean, SD, and CV, and compares raw SD with CV.</p>
+        <div class="note">
+          The dataset is created inside the R script. Students can run the file directly without opening a separate data file.
+        </div>
+        <a class="button" href="../../r-labs/lab-04-coefficient-of-variation/activity.R">Open R activity</a>
+      </aside>
+    </section>
+
+    <section class="section">
+      <h2>Visual explanation</h2>
+      <div class="visual-panel">
+<svg width="820" height="300" viewBox="0 0 820 300" role="img" aria-label="CV comparison">
+  <rect x="0" y="0" width="820" height="300" fill="#ffffff"/>
+  <text x="90" y="40" fill="#0f172a" font-size="20" font-family="Arial">Raw SD</text>
+  <rect x="110" y="90" width="90" height="90" fill="#93c5fd"/>
+  <rect x="230" y="135" width="90" height="45" fill="#93c5fd"/>
+  <text x="125" y="205" fill="#334155" font-size="16" font-family="Arial">A</text>
+  <text x="245" y="205" fill="#334155" font-size="16" font-family="Arial">B</text>
+  <text x="500" y="40" fill="#0f172a" font-size="20" font-family="Arial">CV</text>
+  <rect x="500" y="135" width="90" height="45" fill="#34d399"/>
+  <rect x="620" y="80" width="90" height="100" fill="#34d399"/>
+  <text x="515" y="205" fill="#334155" font-size="16" font-family="Arial">A</text>
+  <text x="635" y="205" fill="#334155" font-size="16" font-family="Arial">B</text>
+  <text x="95" y="250" fill="#334155" font-size="15" font-family="Arial">Smaller SD alone can mislead</text>
+  <text x="470" y="250" fill="#334155" font-size="15" font-family="Arial">CV compares relative variability</text>
+</svg>
+</div>
+    </section>
+
+    <section class="section">
+      <h2>Student work</h2>
+      <ol>
+        <li>Run the R activity from top to bottom.</li>
+        <li>Read the summary table printed in the console.</li>
+        <li>Open the PNG figure saved by the script.</li>
+        <li>Write one short medical interpretation.</li>
+        <li>Identify the common mistake that the activity is designed to prevent.</li>
+      </ol>
+    </section>
+
+    <div class="button-row">
+      <a class="button button-secondary" href="../../index.html">Back to home</a>
+    </div>
+    <div class="footer">Created by: Mahdi Akbarzadeh</div>
+  </main>
+</body>
+</html>
