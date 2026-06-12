@@ -8,90 +8,122 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <h1>Medical Biostatistics Teaching Lab</h1>
-      <p class="lead">Visual, case-based, and R-supported teaching materials for medical biostatistics.</p>
-      <p class="small">Created by: Mahdi Akbarzadeh</p>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">Medical Biostatistics Teaching Lab</div>
+      <h1>Visual, case-based, and R-supported teaching materials for medical biostatistics.</h1>
+      <p class="subtitle">
+        A teaching lab for medical and health-science students who need to understand statistical
+        ideas through clinical examples, visual explanations, and short R activities.
+      </p>
+      <div class="meta">
+        <span class="meta-item">Created by: Mahdi Akbarzadeh</span>
+        <span class="meta-item">Student-friendly modules</span>
+        <span class="meta-item">Self-contained R activities</span>
+      </div>
     </div>
   </header>
 
   <main class="container">
-    <section class="intro">
-      <h2>Course design</h2>
-      <p>
-        This teaching lab is designed for medical and health-science students who need to understand
-        statistical ideas through clinical examples, visual explanations, and short R activities.
-        The goal is not only to calculate statistics, but also to interpret them correctly.
-      </p>
+    <section class="grid">
+      <div class="card">
+        <h2>Course design</h2>
+        <p>
+          This teaching lab is designed to help students move from calculation to interpretation.
+          Each module connects a statistical idea with a medical example, a visual explanation,
+          a common mistake, and a short R activity.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>How students use this lab</h2>
+        <ol>
+          <li>Open a module and read the teaching page.</li>
+          <li>Review the visual explanation and common mistake.</li>
+          <li>Open the R activity and run it in RStudio.</li>
+          <li>Check the Console output to find where the figure was saved.</li>
+          <li>Answer the student interpretation task in your own words.</li>
+        </ol>
+      </div>
     </section>
 
-    <section class="how-to-use">
-      <h2>How students use this lab</h2>
-      <ol>
-        <li>Open a module and read the short teaching page.</li>
-        <li>Review the visual explanation and common mistake.</li>
-        <li>Open the R activity and run it in RStudio.</li>
-        <li>Check the Console output to find where the figure was saved.</li>
-        <li>Answer the student interpretation task in your own words.</li>
-      </ol>
-    </section>
-
-    <section class="modules">
+    <section class="section">
       <h2>Descriptive statistics modules</h2>
 
       <div class="module-grid">
-        <article class="module-card">
-          <h3>Module 01 — Mean, median, skewness, and outliers</h3>
-          <p>Learn how distribution shape affects the choice and interpretation of measures of center.</p>
-          <a href="modules/01-mean-median-skewness/">Open module</a>
+        <article class="card">
+          <span class="badge badge-green">Module 01</span>
+          <h3>Mean, median, skewness, and outliers</h3>
+          <p>Why does the mean move under extreme values while the median remains more stable?</p>
+          <div class="button-row">
+            <a class="button" href="modules/01-mean-median-skewness/">Open module</a>
+            <a class="button button-secondary" href="r-labs/lab-01-mean-median-skewness/activity.R">R activity</a>
+          </div>
         </article>
 
-        <article class="module-card">
-          <h3>Module 02 — Variability, variance, and standard deviation</h3>
-          <p>Understand how spread is measured and why variability matters in medical data.</p>
-          <a href="modules/02-variability-standard-deviation/">Open module</a>
+        <article class="card">
+          <span class="badge badge-green">Module 02</span>
+          <h3>Variability, variance, and standard deviation</h3>
+          <p>Why is the mean alone not enough to describe medical data?</p>
+          <div class="button-row">
+            <a class="button" href="modules/02-variability-standard-deviation/">Open module</a>
+            <a class="button button-secondary" href="r-labs/lab-02-variability-standard-deviation/activity.R">R activity</a>
+          </div>
         </article>
 
-        <article class="module-card">
-          <h3>Module 03 — Quartiles, IQR, boxplots, and outliers</h3>
-          <p>Use quartiles and boxplots to summarize skewed data and identify possible outliers.</p>
-          <a href="modules/03-quartiles-iqr-boxplot/">Open module</a>
+        <article class="card">
+          <span class="badge badge-green">Module 03</span>
+          <h3>Quartiles, IQR, boxplots, and outliers</h3>
+          <p>How should the middle 50% of data and outlier fences be interpreted?</p>
+          <div class="button-row">
+            <a class="button" href="modules/03-quartiles-iqr-boxplot/">Open module</a>
+            <a class="button button-secondary" href="r-labs/lab-03-quartiles-iqr-boxplot/activity.R">R activity</a>
+          </div>
         </article>
 
-        <article class="module-card">
-          <h3>Module 04 — Coefficient of variation</h3>
-          <p>Compare relative variability across medical measurements with different units or scales.</p>
-          <a href="modules/04-coefficient-of-variation/">Open module</a>
+        <article class="card">
+          <span class="badge badge-green">Module 04</span>
+          <h3>Coefficient of variation in laboratory examples</h3>
+          <p>Why is raw SD alone insufficient when comparing measurements on different scales?</p>
+          <div class="button-row">
+            <a class="button" href="modules/04-coefficient-of-variation/">Open module</a>
+            <a class="button button-secondary" href="r-labs/lab-04-coefficient-of-variation/activity.R">R activity</a>
+          </div>
         </article>
 
-        <article class="module-card">
-          <h3>Module 05 — Normal distribution and medical measurements</h3>
-          <p>Connect the shape of a normal distribution with the mean, standard deviation, and medical interpretation.</p>
-          <a href="modules/05-normal-distribution/">Open module</a>
+        <article class="card">
+          <span class="badge badge-blue">Module 05</span>
+          <h3>Normal distribution and medical measurements</h3>
+          <p>How do mean, standard deviation, and distribution shape support medical interpretation?</p>
+          <div class="button-row">
+            <a class="button" href="modules/05-normal-distribution/">Open module</a>
+            <a class="button button-secondary" href="r-labs/lab-05-normal-distribution/activity.R">R activity</a>
+          </div>
         </article>
 
-        <article class="module-card">
-          <h3>Module 06 — Z-scores, percentiles, and relative position</h3>
-          <p>Use standardization to compare measurements and interpret percentiles under a normal model.</p>
-          <a href="modules/06-z-score-percentiles/">Open module</a>
+        <article class="card">
+          <span class="badge badge-blue">Module 06</span>
+          <h3>Z-scores, percentiles, and relative position</h3>
+          <p>How can a raw medical value be interpreted relative to a reference distribution?</p>
+          <div class="button-row">
+            <a class="button" href="modules/06-z-score-percentiles/">Open module</a>
+            <a class="button button-secondary" href="r-labs/lab-06-z-score-percentiles/activity.R">R activity</a>
+          </div>
         </article>
       </div>
     </section>
 
-    <section class="supporting-materials">
-      <h2>Supporting materials</h2>
-      <ul>
-        <li><a href="formula-sheet/">Formula sheet</a></li>
-        <li><a href="practice/concept-questions.html">Concept questions</a></li>
-      </ul>
+    <section class="section">
+      <h2>Practice and reference materials</h2>
+      <div class="button-row">
+        <a class="button" href="formula-sheet/">Formula sheet</a>
+        <a class="button button-secondary" href="practice/concept-questions.html">Concept questions</a>
+      </div>
     </section>
-  </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>Created by: Mahdi Akbarzadeh</p>
+    <div class="footer">
+      Created by: Mahdi Akbarzadeh
     </div>
-  </footer>
+  </main>
 </body>
 </html>
