@@ -1,72 +1,32 @@
-# Medical Biostatistics Lab
+# Medical Biostatistics Teaching Lab
 
-**Visual, case-based, and R-supported teaching materials for medical biostatistics.**
+Created by: Mahdi Akbarzadeh
 
-Created by: **Mahdi Akbarzadeh**
+Visual, case-based, and R-supported teaching materials for medical biostatistics.
 
----
+## Purpose
 
-## Overview
+This repository provides short educational modules for medical and health-science students. Each module combines conceptual explanation, common interpretation mistakes, visual reasoning, and a self-contained R activity.
 
-This repository provides teaching materials for introductory medical biostatistics. The materials are organized around clinical examples, visual interpretation, and short R activities that students can run independently.
+## Current modules
 
-The initial section focuses on descriptive statistics:
+1. Mean, median, skewness, and outliers
+2. Variability, variance, and standard deviation
+3. Quartiles, IQR, boxplots, and outliers
+4. Coefficient of variation in laboratory examples
+5. Normal distribution and medical measurements
+6. Z-scores, percentiles, and relative position
 
-- Mean, median, skewness, and outliers
-- Variability, variance, and standard deviation
-- Quartiles, IQR, boxplots, and outlier detection
-- Coefficient of variation in clinical laboratory examples
+## How to use the R activities
 
----
+Each R activity is designed to run directly in RStudio without external CSV files.
 
-## Teaching format
+1. Open the relevant `activity.R` file.
+2. Run the full script.
+3. Read the Console output.
+4. Open the figure saved in `activity_outputs/`.
+5. Answer the student interpretation task.
 
-Each section follows the same structure:
+## Repository description
 
-```text
-Clinical question
-Statistical concept
-Visual explanation
-R activity
-Student interpretation
-Common mistake
-```
-
-The R activities are self-contained. Each script defines or simulates its own teaching dataset, so students do not need to locate external data files.
-
----
-
-## Local preview
-
-Open the course landing page:
-
-```text
-index.html
-```
-
-To run an activity, open one of the `activity.R` files in the `r-labs/` directory.
-
----
-
-## Repository structure
-
-```text
-medical-biostatistics-lab/
-├── index.html
-├── assets/
-├── modules/
-├── r-labs/
-├── formula-sheet/
-├── practice/
-└── docs/
-```
-
----
-
-## Data policy
-
-All examples use synthetic teaching data only.
-
----
-
-**Created by: Mahdi Akbarzadeh**
+Visual, case-based, and R-supported teaching materials for medical biostatistics.
