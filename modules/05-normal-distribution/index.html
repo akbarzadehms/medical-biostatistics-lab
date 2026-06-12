@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Module 05 — Normal Distribution and Medical Measurements</title>
+  <meta name="description" content="Normal distribution, mean, standard deviation, and medical measurements.">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Module 05 — Normal distribution and medical measurements</h1>
+      <p class="lead">Understanding the normal model as a visual and interpretive tool for medical data.</p>
+      <p class="small">Created by: Mahdi Akbarzadeh</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <nav class="breadcrumb">
+      <a href="../../index.html">Home</a> / Module 05
+    </nav>
+
+    <section>
+      <h2>Learning goals</h2>
+      <ul>
+        <li>Explain the shape and symmetry of a normal distribution.</li>
+        <li>Identify the mean as the center of a normal distribution.</li>
+        <li>Interpret standard deviation as distance from the mean.</li>
+        <li>Understand why many medical variables are approximately, but not perfectly, normal.</li>
+        <li>Distinguish a normal distribution from a skewed distribution.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Teaching notes</h2>
+      <p>
+        In a normal distribution, the mean, median, and mode are approximately equal.
+        The curve is symmetric around the mean. Values close to the mean are common,
+        while values far from the mean become progressively less common.
+      </p>
+      <p>
+        The standard deviation describes the typical distance of observations from the mean.
+        Under an ideal normal model, about 68% of values fall within one standard deviation
+        of the mean, about 95% fall within two standard deviations, and about 99.7% fall
+        within three standard deviations.
+      </p>
+      <p>
+        Normality is a model, not a guarantee. Before using mean ± SD or normal-based
+        probability statements, the distribution shape should be checked.
+      </p>
+    </section>
+
+    <section>
+      <h2>Visual explanation</h2>
+      <p>
+        Imagine systolic blood pressure values in a large group of adults. If the values
+        are approximately normal, the center of the curve is close to the mean. Most
+        people are near the mean, fewer are very low or very high, and the curve has two
+        balanced tails.
+      </p>
+      <p>
+        The R activity draws this idea by showing a histogram, a smooth density curve,
+        and vertical reference lines for the mean, mean ± 1 SD, and mean ± 2 SD.
+      </p>
+    </section>
+
+    <section>
+      <h2>Common mistake</h2>
+      <p>
+        A common mistake is to assume that every bell-shaped dataset is perfectly normal,
+        or that similar mean and median values automatically prove normality. A dataset
+        can look roughly symmetric while still having heavy tails, outliers, or other
+        deviations from the normal model.
+      </p>
+    </section>
+
+    <section>
+      <h2>R activity</h2>
+      <p>
+        Open the activity file, run it in RStudio, and inspect both the Console output
+        and the saved figure.
+      </p>
+      <p>
+        <a href="../../r-labs/lab-05-normal-distribution/activity.R">Open activity.R</a>
+      </p>
+    </section>
+
+    <section>
+      <h2>Student work</h2>
+      <ol>
+        <li>Report the simulated mean and standard deviation.</li>
+        <li>Compare the observed percentage within ±1 SD with the expected 68% rule.</li>
+        <li>Compare the observed percentage within ±2 SD with the expected 95% rule.</li>
+        <li>Explain why real medical data may not follow the normal model perfectly.</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Created by: Mahdi Akbarzadeh</p>
+    </div>
+  </footer>
+</body>
+</html>
