@@ -1,36 +1,57 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Concept Practice Questions</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Concept Questions — Medical Biostatistics Teaching Lab</title>
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
-  <header class="hero">
-    <div class="hero-inner">
-      <div class="eyebrow">Concept Practice</div>
-      <h1>Practice questions for descriptive statistics</h1>
-      <p class="subtitle">Short questions for interpretation-focused learning.</p>
+  <header class="site-header">
+    <div class="container">
+      <h1>Concept Questions</h1>
+      <p class="lead">Short interpretation questions for medical biostatistics practice.</p>
+      <p class="small">Created by: Mahdi Akbarzadeh</p>
     </div>
   </header>
+
   <main class="container">
-    <section class="section">
-      <h2>Sample question</h2>
-      <p>
-        In a clinical dataset, the mean is much larger than the median. What is the most likely interpretation?
-      </p>
+    <nav class="breadcrumb">
+      <a href="../index.html">Home</a> / Concept questions
+    </nav>
+
+    <section>
+      <h2>Descriptive statistics</h2>
       <ol>
-        <li>The data are probably right-skewed.</li>
-        <li>The data are definitely normal.</li>
-        <li>The data definitely have no outliers.</li>
-        <li>The standard deviation must be zero.</li>
+        <li>A dataset is strongly right-skewed. Which summary is usually more appropriate: mean ± SD or median and IQR? Explain why.</li>
+        <li>Two laboratory markers have different units. Why can the coefficient of variation be more useful than the standard deviation for comparison?</li>
+        <li>Why does a value above Q3 not automatically mean that the value is an outlier?</li>
       </ol>
-      <div class="note">
-        Correct answer: option 1. A mean much larger than the median is often compatible with a right-skewed distribution.
-      </div>
     </section>
-    <div class="footer">Created by: Mahdi Akbarzadeh</div>
+
+    <section>
+      <h2>Normal distribution</h2>
+      <ol start="4">
+        <li>In an approximately normal distribution, why are the mean and median usually close to each other?</li>
+        <li>What does it mean if about 95% of values fall within mean ± 2 SD?</li>
+        <li>Why should normality be treated as a model rather than a guaranteed property of medical data?</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Z-scores and percentiles</h2>
+      <ol start="7">
+        <li>A patient has a Z-score of +1.5 for a measurement. Interpret this result in one sentence.</li>
+        <li>A student is at the 80th percentile. What does this mean, and what does it not mean?</li>
+        <li>Why is a raw score not enough for comparison unless the reference distribution is known?</li>
+      </ol>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Created by: Mahdi Akbarzadeh</p>
+    </div>
+  </footer>
 </body>
 </html>
