@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Module 06 — Z-scores, Percentiles, and Relative Position</title>
+  <meta name="description" content="Z-scores, percentiles, standardization, and relative position in medical data.">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">Module 06</div>
+      <h1>Z-scores, percentiles, and relative position</h1>
+      <p class="subtitle">
+        Using standardization to compare values measured on different scales.
+      </p>
+      <div class="meta">
+        <span class="meta-item">Created by: Mahdi Akbarzadeh</span>
+        <span class="meta-item">Descriptive statistics</span>
+        <span class="meta-item">Standardization</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="grid">
+      <div class="card">
+        <h2>Learning goals</h2>
+        <ul>
+          <li>Define a Z-score as the number of standard deviations from the mean.</li>
+          <li>Convert a raw medical measurement into a Z-score.</li>
+          <li>Interpret whether a patient is below, near, or above the population average.</li>
+          <li>Connect Z-scores with percentiles under a normal model.</li>
+          <li>Use R to compute probabilities from Z-scores.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>R activity</h2>
+        <p>
+          The R activity computes Z-scores and percentiles for birth weight and test-score examples,
+          then draws normal curves with shaded percentile areas.
+        </p>
+        <div class="button-row">
+          <a class="button" href="../../r-labs/lab-06-z-score-percentiles/activity.R">Open activity.R</a>
+          <a class="button button-secondary" href="../../index.html">Back to home</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Teaching notes</h2>
+      <p>
+        A Z-score standardizes a raw value by subtracting the reference mean and dividing by the reference
+        standard deviation. The result tells us how many standard deviations the value is from the mean.
+      </p>
+      <p>
+        A positive Z-score means the value is above the mean. A negative Z-score means the value is below
+        the mean. The magnitude of the Z-score shows how far the value is from the reference mean.
+      </p>
+      <div class="note">
+        Under a normal model, a Z-score can be converted into a percentile. A percentile describes relative
+        position in the reference distribution. It should not be interpreted as a percentage of health,
+        correctness, or clinical success.
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Visual explanation</h2>
+      <p>
+        A raw value such as birth weight or an exam score is difficult to interpret alone. The same raw value
+        may be ordinary in one reference group and unusual in another. Z-scores solve this problem by placing
+        the value on a common standardized scale.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Common mistake</h2>
+      <div class="callout">
+        A common mistake is to compare raw values across different distributions. Standardized comparison
+        requires the reference distribution.
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Student work</h2>
+      <ol>
+        <li>Interpret the birth-weight Z-score in one complete sentence.</li>
+        <li>Interpret the birth-weight percentile as relative position.</li>
+        <li>Interpret the test-score Z-score in one complete sentence.</li>
+        <li>Explain why raw values should not be compared without a reference distribution.</li>
+      </ol>
+    </section>
+
+    <div class="footer">
+      Created by: Mahdi Akbarzadeh
+    </div>
+  </main>
+</body>
+</html>
