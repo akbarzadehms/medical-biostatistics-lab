@@ -8,85 +8,87 @@
   <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <h1>Module 05 — Normal distribution and medical measurements</h1>
-      <p class="lead">Understanding the normal model as a visual and interpretive tool for medical data.</p>
-      <p class="small">Created by: Mahdi Akbarzadeh</p>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">Module 05</div>
+      <h1>Normal distribution and medical measurements</h1>
+      <p class="subtitle">
+        Understanding the normal model as a visual and interpretive tool for medical data.
+      </p>
+      <div class="meta">
+        <span class="meta-item">Created by: Mahdi Akbarzadeh</span>
+        <span class="meta-item">Descriptive statistics</span>
+        <span class="meta-item">Normal model</span>
+      </div>
     </div>
   </header>
 
   <main class="container">
-    <nav class="breadcrumb">
-      <a href="../../index.html">Home</a> / Module 05
-    </nav>
+    <section class="grid">
+      <div class="card">
+        <h2>Learning goals</h2>
+        <ul>
+          <li>Explain the shape and symmetry of a normal distribution.</li>
+          <li>Identify the mean as the center of a normal distribution.</li>
+          <li>Interpret standard deviation as distance from the mean.</li>
+          <li>Understand why many medical variables are approximately, but not perfectly, normal.</li>
+          <li>Distinguish a normal distribution from a skewed distribution.</li>
+        </ul>
+      </div>
 
-    <section>
-      <h2>Learning goals</h2>
-      <ul>
-        <li>Explain the shape and symmetry of a normal distribution.</li>
-        <li>Identify the mean as the center of a normal distribution.</li>
-        <li>Interpret standard deviation as distance from the mean.</li>
-        <li>Understand why many medical variables are approximately, but not perfectly, normal.</li>
-        <li>Distinguish a normal distribution from a skewed distribution.</li>
-      </ul>
+      <div class="card">
+        <h2>R activity</h2>
+        <p>
+          The R activity simulates systolic blood pressure values, draws a histogram and density curve,
+          adds reference lines for the mean and standard deviation, and prints approximate interval percentages.
+        </p>
+        <div class="button-row">
+          <a class="button" href="../../r-labs/lab-05-normal-distribution/activity.R">Open activity.R</a>
+          <a class="button button-secondary" href="../../index.html">Back to home</a>
+        </div>
+      </div>
     </section>
 
-    <section>
+    <section class="section">
       <h2>Teaching notes</h2>
       <p>
-        In a normal distribution, the mean, median, and mode are approximately equal.
-        The curve is symmetric around the mean. Values close to the mean are common,
-        while values far from the mean become progressively less common.
+        In a normal distribution, the mean, median, and mode are approximately equal. The curve is symmetric
+        around the mean. Values close to the mean are common, while values far from the mean become progressively
+        less common.
       </p>
       <p>
-        The standard deviation describes the typical distance of observations from the mean.
-        Under an ideal normal model, about 68% of values fall within one standard deviation
-        of the mean, about 95% fall within two standard deviations, and about 99.7% fall
-        within three standard deviations.
+        The standard deviation describes the typical distance of observations from the mean. Under an ideal normal
+        model, about 68% of values fall within one standard deviation of the mean, about 95% fall within two standard
+        deviations, and about 99.7% fall within three standard deviations.
       </p>
-      <p>
-        Normality is a model, not a guarantee. Before using mean ± SD or normal-based
-        probability statements, the distribution shape should be checked.
-      </p>
+      <div class="note">
+        Normality is a model, not a guarantee. Before using mean ± SD or normal-based probability statements,
+        the distribution shape should be checked.
+      </div>
     </section>
 
-    <section>
+    <section class="section">
       <h2>Visual explanation</h2>
       <p>
-        Imagine systolic blood pressure values in a large group of adults. If the values
-        are approximately normal, the center of the curve is close to the mean. Most
-        people are near the mean, fewer are very low or very high, and the curve has two
-        balanced tails.
+        Imagine systolic blood pressure values in a large group of adults. If the values are approximately normal,
+        the center of the curve is close to the mean. Most people are near the mean, fewer are very low or very high,
+        and the curve has two balanced tails.
       </p>
       <p>
-        The R activity draws this idea by showing a histogram, a smooth density curve,
-        and vertical reference lines for the mean, mean ± 1 SD, and mean ± 2 SD.
+        The R activity draws this idea by showing a histogram, a smooth density curve, and vertical reference lines
+        for the mean, mean ± 1 SD, and mean ± 2 SD.
       </p>
     </section>
 
-    <section>
+    <section class="section">
       <h2>Common mistake</h2>
-      <p>
-        A common mistake is to assume that every bell-shaped dataset is perfectly normal,
-        or that similar mean and median values automatically prove normality. A dataset
-        can look roughly symmetric while still having heavy tails, outliers, or other
-        deviations from the normal model.
-      </p>
+      <div class="callout">
+        A common mistake is to assume that every bell-shaped dataset is perfectly normal, or that similar mean
+        and median values automatically prove normality.
+      </div>
     </section>
 
-    <section>
-      <h2>R activity</h2>
-      <p>
-        Open the activity file, run it in RStudio, and inspect both the Console output
-        and the saved figure.
-      </p>
-      <p>
-        <a href="../../r-labs/lab-05-normal-distribution/activity.R">Open activity.R</a>
-      </p>
-    </section>
-
-    <section>
+    <section class="section">
       <h2>Student work</h2>
       <ol>
         <li>Report the simulated mean and standard deviation.</li>
@@ -95,12 +97,10 @@
         <li>Explain why real medical data may not follow the normal model perfectly.</li>
       </ol>
     </section>
-  </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>Created by: Mahdi Akbarzadeh</p>
+    <div class="footer">
+      Created by: Mahdi Akbarzadeh
     </div>
-  </footer>
+  </main>
 </body>
 </html>
